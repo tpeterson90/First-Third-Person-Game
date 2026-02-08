@@ -298,8 +298,64 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c102039b58482045b03f925b3e25790, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 370495622}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c102039b58482045b03f925b3e25790, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 370495621}
   m_SourcePrefab: {fileID: 100100000, guid: 0c102039b58482045b03f925b3e25790, type: 3}
+--- !u!1 &370495620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c102039b58482045b03f925b3e25790, type: 3}
+  m_PrefabInstance: {fileID: 370495619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &370495621
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370495620}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.4
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &370495622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370495620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cb0dc6008b86b4db6008dff33f73a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RelativeMovement
+  target: {fileID: 370495623}
+  rotSpeed: 15
+  moveSpeed: 6
+--- !u!4 &370495623 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c102039b58482045b03f925b3e25790, type: 3}
+  m_PrefabInstance: {fileID: 370495619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &848521635
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,6 +797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0459c03fca8a96549b36eafb3f775f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OrbitCamera
+  target: {fileID: 370495623}
+  rotSpeed: 1.5
 --- !u!1 &1047318922
 GameObject:
   m_ObjectHideFlags: 0
